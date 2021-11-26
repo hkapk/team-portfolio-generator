@@ -1,5 +1,6 @@
 const inquirer = require('inquirer');
 
+//manager questions
 const questions = [
         {
         type: 'input',
@@ -24,8 +25,10 @@ const questions = [
 
 ];
 
+//function to prompt the manager questions at the beginning of the app
 function init () {
     inquirer.prompt(questions);
 }
 
+//calls manager questions 
 init();

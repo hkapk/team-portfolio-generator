@@ -25,7 +25,66 @@ const questions = [
         name: 'office',
         message: 'Enter the office number for the manager',
         },
-
+        {
+        type: 'list',
+        name: 'updateEmployee',
+        message: 'Would you like to add an Engineer, Intern or finish building your team',
+        choices: ['Engineer', 'Intern', 'Done'],
+        },
+        {
+        type: 'input',
+        name: 'engineerName',
+        message: 'Enter the name of the Engineer',
+        },
+        {
+        type: 'input',
+        name: 'engineerId',
+        message: 'Enter the ID number for the Engineer',
+        },
+        {
+        type: 'input',
+        name: 'engineerEmail',
+        message: 'Enter a valid email address for the Engineer',
+        },
+        {
+        type: 'input',
+        name: 'engineerGithub',
+        message: 'Enter a the github username Engineer',
+        },
+        //{
+        // type: 'list',
+        // name: 'updateEmployee',
+        // message: 'Would you like to add an Engineer, Intern or finish building your team',
+        // choices: ['Engineer', 'Intern', 'Done'],
+        // },
+        {
+        type: 'input',
+        name: 'internName',
+        message: 'Enter the name of the Intern',
+        },
+        {
+        type: 'input',
+        name: 'internId',
+        message: 'Enter the ID number for the Intern',
+        },
+        {
+        type: 'input',
+        name: 'internEmail',
+        message: 'Enter a valid email address for the Intern',
+        },
+        {
+        type: 'input',
+        name: 'school',
+        message: 'Enter the school or university that the intern is from.',
+        },
+        {
+        type: 'list',
+        name: 'updateEmployee',
+        message: 'Would you like to add an Engineer, Intern or finish building your team',
+        choices: ['Engineer', 'Intern', 'Done'],
+        },
+        
+    
 ];
 //function to return the inquirer data
 
@@ -73,6 +132,47 @@ function generatePage(data) {
         </div>
     </div>
 </div>
+
+<div class="container">
+    <div class="row">
+    <div class="team-area col-12 d-flex justify-content-center">
+<div class="card employee-card">
+<div class="card-header">
+    <h2 class="card-title">${data.engineerName}</h2>
+    <h3 class="card-title"><i class="fas fa-glasses mr-2"></i> Engineer </h3>
+</div>
+<div class="card-body">
+    <ul class="list-group">
+        <li class="list-group-item">ID: ${data.engineerId}</li>
+        <li class="list-group-item">Email: <a href="mailto:${data.engineerEmail}">${data.engineerEmail}</a></li>
+        <li class="list-group-item">GitHub: <a href="https://github.com/${data.engineerGithub}" target="_blank" rel="noopener noreferrer">${data.engineerGithub}</a></li>
+    </ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="container">
+    <div class="row">
+    <div class="team-area col-12 d-flex justify-content-center">
+<div class="card employee-card">
+<div class="card-header">
+    <h2 class="card-title">${data.internName}</h2>
+    <h3 class="card-title"><i class="fas fa-user-graduate mr-2"></i> Intern </h3>
+</div>
+<div class="card-body">
+    <ul class="list-group">
+        <li class="list-group-item">ID: ${data.internId}</li>
+        <li class="list-group-item">Email: <a href="mailto:${data.internEmail}">${data.internEmail}</a></li>
+        <li class="list-group-item">School: ${data.school}</li>
+    </ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+
 </body>
 </html>
 `;

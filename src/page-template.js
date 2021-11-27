@@ -1,8 +1,3 @@
-const inquirer = require('inquirer');
-const fs = require('fs');
-
-
-
 // create the team
 const generateTeam = team => {
 
@@ -121,3 +116,5 @@ module.exports = team => {
 </html>
     `;
 };
+
+module.exports = generateTeam;

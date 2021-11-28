@@ -51,12 +51,12 @@ const questions = [
         name: 'engineerGithub',
         message: 'Enter a the github username Engineer',
         },
-        //{
-        // type: 'list',
-        // name: 'updateEmployee',
-        // message: 'Would you like to add an Engineer, Intern or finish building your team',
-        // choices: ['Engineer', 'Intern', 'Done'],
-        // },
+        {
+        type: 'list',
+        name: 'intern',
+        message: 'Would you like to add an Engineer, Intern or finish building your team',
+        choices: ['Engineer', 'Intern', 'Done'],
+        },
         {
         type: 'input',
         name: 'internName',
@@ -79,7 +79,7 @@ const questions = [
         },
         {
         type: 'list',
-        name: 'updateEmployee',
+        name: 'done',
         message: 'Would you like to add an Engineer, Intern or finish building your team',
         choices: ['Engineer', 'Intern', 'Done'],
         },
@@ -172,8 +172,11 @@ function generatePage(data) {
 </div>
 </div>
 </div>
-
+<footer>
+   <div class="text-center"> Made by Hank </div>
+</footer>
 </body>
+
 </html>
 `;
 }
@@ -184,8 +187,8 @@ function generatePage(data) {
 function init () {
     inquirer.prompt(questions)
     .then(function(data){
-     fs.writeFileSync("index.html", generatePage (data));
-     console.log(data);
+     fs.writeFileSync("./dist/index.html", generatePage (data));
+     //console.log(data);
      console.log("file created");
     })
 }

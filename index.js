@@ -114,19 +114,19 @@ function generatePage(data) {
 <title>My Team</title>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="../assets/style.css">
 <script src="https://kit.fontawesome.com/c502137733.js"></script>
 </head>
 
 <body>
 <div class="container-fluid">
     <div class="row">
-        <div class="col-12 jumbotron mb-3 team-heading">
+        <div class="col-12 jumbotron mb-3 team-heading bg-info"">
             <h1 class="text-center">My Team</h1>
         </div>
     </div>
 </div>
-<div class="container">
+<div class="container m-5 mx-auto">
     <div class="row">
         <div class="team-area col-12 d-flex justify-content-center">
         <div class="card employee-card">
@@ -146,7 +146,7 @@ function generatePage(data) {
     </div>
 </div>
 
-<div class="container">
+<div class="container m-5 mx-auto">
     <div class="row">
     <div class="team-area col-12 d-flex justify-content-center">
 <div class="card employee-card">
@@ -166,7 +166,7 @@ function generatePage(data) {
 </div>
 </div>
 
-<div class="container">
+<div class="container m-5 mx-auto">
     <div class="row">
     <div class="team-area col-12 d-flex justify-content-center">
 <div class="card employee-card">

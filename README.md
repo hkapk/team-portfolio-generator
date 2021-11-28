@@ -3,7 +3,7 @@
 
 # Team Portfolio Generator
 
-https://github.com/hkapk/Team Portfolio Generator
+https://github.com/hkapk/team-portfolio-generator
 
 ## Project Description:
 

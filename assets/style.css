@@ -1,0 +1,27 @@
+.header {
+  color: white;
+  margin: 20px 20px;
+  z-index: 100;
+}
+.title {
+  background-color: lightseagreen;
+  z-index: 100;
+}
+
+.card-body {
+  background-color: lightpink;
+}
+
+.card {
+  background-color: lightgreen;
+  text-align: center;
+  color: white;
+}
+
+.list-group-item {
+  background-color: lightsalmon;
+}
+
+.footer {
+  color: lightseagreen;
+}

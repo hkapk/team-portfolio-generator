@@ -1,6 +1,6 @@
 const inquirer = require('inquirer');
 const generateTeam = require('./src/page-template');
-//const Employee = require('./lib/Employee');
+const Employee = require('./lib/Employee');
 //const Engineer = require('./lib/Engineer');
 //const Manager = require('./lib/Manager');
 //const Intern = require('./lib/Intern');
@@ -91,6 +91,15 @@ const questions = [
     
 ];
 //function to return the inquirer data
+
+
+//Employee Class
+
+
+
+
+
+
 
 //generate the HTML file
 function generatePage(data) {
